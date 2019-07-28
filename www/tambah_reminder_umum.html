@@ -1,0 +1,115 @@
+<div data-page="tambah_reminder_umum" class="page navbar-fixed ">
+  <div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="kalender_kegiatan.html" class="link icon-only"><i class="fa fa-chevron-left"></i></a></div>
+        <div class="center ">Reminder Umum</div>
+        <div class="right sliding"><a href="#" data-panel="left" class="open-panel link icon-only"><i class="fa fa-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content hide-bars-on-scroll" >
+      <form method="POST">
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Nama Kegiatan</div>
+                  <div class="item-input">
+                    <input type="text" id="judul" name="judul" placeholder="Masukkan nama kegiatan"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Keterangan</div>
+                  <div class="item-input">
+                    <input type="text" id="keterangan" name="keterangan" placeholder="Keterangan kegiatan"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Tipe Kirim</div>
+                  <div class="item-input">
+                    <input type="text" id="ks-picker-device2" class="kirim" placeholder="Pilih Tipe Kirim Reminder"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Tanggal Mulai</div>
+                    <div class="item-input">
+                      <input type="text" name="tgl" class="tgl_acara" placeholder="Pilih tanggal mulai" id="ks-picker-custom-toolbar1"/>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Jam</div>
+                  <div class="item-input">
+                    <input type="text" name="jam" id="ks-picker-custom-toolbar2" class="jam_acara" placeholder="Pilih waktu acara"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Tipe Perulangan Acara</div>
+                  <div class="item-input">
+                    <input type="text" id="ks-picker-device3" class="tipe" placeholder="Pilih Tipe Perulangan Acara"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div id="tipe_acara_0" style="display: none">
+               <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title  label">Ingatkan Pada</div>
+                      <div class="item-input">
+                        <input type="number" id="ingat" name="ingat" placeholder="hari" min="0" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title  label">Tipe Pengingat Acara</div>
+                      <div class="item-input">
+                        <input type="text" id="ks-picker-device4" class="status" placeholder="Pilih Tipe Pengingat"/>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            </div>
+            <div id="tipe_acara_1" style="display: none">
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title  label">Tanggal Selesai</div>
+                    <div class="item-input">
+                      <input type="text" name="tgl" class="tgl_sls" id="ks-picker-custom-toolbar3" placeholder="Pilih tanggal selesai"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </form>
+
+      <div class="content-block">
+            <a href="#" id="btnTambahReminder" class="button  color2 col-100">Tambah Reminder</a>
+      </div>
+  </div>
+</div>

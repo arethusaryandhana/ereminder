@@ -1,0 +1,62 @@
+<div data-page="buat_grup_siar" class="page navbar-fixed ">
+  <div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="kalender_kegiatan.html" class="link icon-only"><i class="fa fa-chevron-left"></i></a></div>
+        <div class="center ">Reminder Umum</div>
+        <div class="right sliding"><a href="#" data-panel="left" class="open-panel link icon-only"><i class="fa fa-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content hide-bars-on-scroll" >
+      <form method="POST">
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Nama Grup</div>
+                  <div class="item-input">
+                    <input type="text" id="nama_grup" name="nama_grup" placeholder="Masukkan nama grp"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title  label">Nama Dinas</div>
+                  <div class="item-input">
+                    <select id="combo_dinas">
+                      <option value="">-- PILIH DINAS TEMPAT PEGAWAI BEKERJA -- </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div id="tampil_pegawai" style="display: none">
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title  label">Nama Pegawai</div>
+                    <div class="item-input">
+                      <select id="combo_pegawai">
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </form>
+
+      <div class="content-block">
+            <a href="buat_grup_siar.html" id="btnTambahAnggota" class="button  color2 col-100">Tambah Anggota</a>
+      </div>
+      <div class="content-block">
+            <a href="#" id="btnBuatGrup" class="button  color2 col-100">Buat Grup</a>
+      </div>
+
+      <div id="grup_sementara"></div>
+  </div>
+</div>

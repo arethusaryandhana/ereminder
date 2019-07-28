@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "294389655186",
+    "firebase_url": "https://ereminder-d4bca.firebaseio.com",
+    "project_id": "ereminder-d4bca",
+    "storage_bucket": "ereminder-d4bca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294389655186:android:2b6065e31659e7f6",
+        "android_client_info": {
+          "package_name": "com.phonegap.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294389655186-dk8vqvlai511b9d3srb2bnukf8d64cfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDISSIEdrll5JIlRWGVd5LFS8M3F1tlJ6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294389655186-dk8vqvlai511b9d3srb2bnukf8d64cfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>E-REMINDER MADIUN</title>
+    <!-- Font embedding link goes here -->
+    <link href="css/roboto.css" rel="stylesheet">
+    <link href='css/oswald.css' rel='stylesheet'>
+
+    <!-- CSS link goes here -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/maxframes.css">
+</head>
+<body class="theme-lightblue">
+
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-cover sidebar">
+    <div class="buttonbar row no-gutter">
+        <a href="#" id="btnlogout" class=" button color2 col-100">Logout</a>
+    </div>
+    <div class="view">
+        <div class=" ">
+            <div data-page="panel-left" class="sidemenu leftmenusmall gradient">
+                <div class="item-content userprofile">
+                    <div class="item-media"><img src="img/logo_kota_madiun.png" width="44" alt=""/></div>
+                    <div class="item-inner">
+                        <div class="item-title-row">
+                            <div id="username"></div>
+                        </div>
+                        <div class="item-subtitle" style="display: none">India</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="list-block accordion-list">
+                        <ul class="menu">
+                            <li>
+                                <a href="kalender_kegiatan.html" class="item-link item-content ">
+                                    <div class="itemmeniinner"><i class="fa fa-th"></i><span>Kalender Acara</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="accordion-item"><a href="#" class="item-content item-link">
+                                <div class="item-inner">
+                                    <div class="item-title"><i class="fa fa-long-arrow-right"></i>Reminder Umum</div>
+                                </div>
+                            </a>
+                                <div class="accordion-item-content">
+                                    <div class="content-block">
+                                        <ul>
+                                            <li><a href="reminder_umum_kiriman.html" class="item-link open-panel">Reminder
+                                                Umum Kiriman</a></li>
+                                            <li><a href="reminder_umum_pribadi.html" class="item-link open-panel">Reminder
+                                                Umum Pribadi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item"><a href="#" class="item-content item-link">
+                                <div class="item-inner">
+                                    <div class="item-title"><i class="fa fa-long-arrow-right"></i>Reminder Khusus</div>
+                                </div>
+                            </a>
+                                <div class="accordion-item-content">
+                                    <div class="content-block">
+                                        <ul>
+                                            <li><a href="#" data-panel="left" class="item-link  open-panel"><span>Reminder Khusus Kiriman</span></a>
+                                            </li>
+                                            <li><a href="#" data-panel="right" class="item-link open-panel"><span>Reminder Khusus Pribadi</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="buat_grup_siar.html" class="item-link item-content ">
+                                    <div class="itemmeniinner"><i class="fa fa-th"></i><span>Grup Siar</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>   
+<div class="views pageview">
+    <div class="view view-main">
+        <div class="pages">
+            <div data-page="index" class="page">
+                <div class="page-content landingpage">
+                    <div class="logo main col12"><br><br><br><br><br> <img src="img/logo-kota-madiun.png" alt=""></div>
+                    <div class="introtext" style="display: none">
+                        <h1> E-Reminder</h1>
+                        <p>Madiun</p>
+                    </div>
+                    <div class="buttonbar row no-gutter">
+                        <a href="sign-in.html" class="button-fill button col-100">Login</a>
+                        <a href="register.html" class="color2 button col-50" style="display: none">Sign Up</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS link goes here -->
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/maxframes.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>

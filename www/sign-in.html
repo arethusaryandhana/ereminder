@@ -1,0 +1,37 @@
+<div data-page="sign-in" class="page">
+  <div class="navbar header">
+    <div class="navbar-inner">
+      <div class="left sliding"><a href="index.html" class="link icon-only"><i class="fa fa-chevron-left"></i></a></div>
+      </div>
+  </div>
+  <div class="page-content logins hide-bars-on-scroll">
+      <div class="loginsimag row"><img  src="img/logo-kota-madiun.png" alt=""></div>
+      <div class="clear"></div>
+      <form action="" method="POST" class="form-login" enctype="multipart/form-data">
+        <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+        <div class="list-block">
+          <ul>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Username</div>
+                <div class="item-input">
+                  <input class="style login3" type="text" id="usernameku" name="usernameku" placeholder="Username">
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Password</div>
+                <div class="item-input">
+                  <input class="style login3" type="password" id="password" name="password" placeholder="Password">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form> 
+      <div class="buttonbar row no-gutter"> 
+        <a href="#" id="btnsignin" class="button-fill button col-100">Login</a>
+      </div>
+  </div>
+</div>
